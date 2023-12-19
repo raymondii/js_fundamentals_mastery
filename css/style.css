@@ -1,0 +1,13 @@
+#message {
+    position: absolute;
+    top: 45vh;
+    left: 0;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+    padding: 25px;
+    margin: 0 auto;
+    display: none;
+  }
