@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <p id="message">
+    <header class="row justify-content">
+        <a href="./highscores.html">Highscorse</a>
+        <h3 id="time-output">Time: 60</h3>
+    </header>
+    
+    <div class="start-wrap text-center">
+        <h2>JS Fundamentals Challenge</h2>
+        <p>Welcome, Can You Pass This JS Challenge?</p>
+        <button id="start">Start</button>
+    </div>
 
-    </p>
-    <h1>
-        Time Left: 10
-    </h1>
+    <div class="question-wrap hide">
+        <h2 class="question-text"></h2>
+        <div class="choices"></div>
+        <p class="answer-alert"></p>
+    </div>
+
     <script src="./js/questions.js"></script>
     <script src="./js/script.js"></script>
 </body>

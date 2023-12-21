@@ -1,22 +1,39 @@
-let h1 = document.querySelector("h1");
-let time = 10;
+let startBtn = document.querySelector("#start");
+let startWrap = document.querySelector(".start-wrap");
+let quesitonWrap = document.querySelector(".question-wrap");
+let timeOutput = document.querySelector("#time-output");
 
+let questionIndex = 0;
+let time = 60;
+let timer;
 
-let timer = setInterval(function () {
-    time--;
-    h1.innerText = "Time Left: " + time;
-    if (time === 0) {
-        endgame();
-    }
-}, 1000);
+/* ToDO 
+- make displayQuestion function
+- make endGame function
+- make check answer function
+*/
 
-function endgame() {
-    clearInterval(timer);
-    alert("Times Up");
-    let messageParagraph = document.querySelector("#message");
-    messageParagraph.innerText = "Game Over";
-    messageParagraph.style.display = "initial"
+function startQuiz() {
+    startWrap.classList.add("hide");
+    quesitonWrap.classList.remove("hide");
+
+    displayQuestion();
+    startCountdown();
 }
 
-// question.wrap.innerHTML =
-//     "<div>" + "<h3>" + question[0].questionText + "</h3>" + "</div>"
+function displayQuestion() {
+
+}
+
+function startCountdown() {
+    timeOutput.innerText = "Time Left: " + time;
+    timer = setInterval(function() {
+        time--;
+        timeOutput.innerText = "Time Left: " + (time >= 0 ? time : 0);
+        if (time <=0) {
+            endgame();
+        }
+    }, 1000);
+}
+
+startBtn.addEventListener("click", startQuiz);
