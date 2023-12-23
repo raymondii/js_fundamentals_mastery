@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js quiz</title>
+    <title>JS Overvi</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="row justify-content">
-        <a href="./highscores.html">Highscorse</a>
+    <header class="row justify-between">
+        <a href="./highscores.html">Highscores</a>
         <h3 id="time-output">Time: 60</h3>
     </header>
-    
+
     <div class="start-wrap text-center">
-        <h2>JS Fundamentals Challenge</h2>
-        <p>Welcome, Can You Pass This JS Challenge?</p>
-        <button id="start">Start</button>
+        <h2>Coding Quiz Challenge</h2>
+        <p>Wlecome to the JS Coding Quiz Challenge, Have FUN!</p>
+        <button id="start">Start Quiz</button>
     </div>
 
     <div class="question-wrap hide">
@@ -24,7 +24,13 @@
         <p class="answer-alert"></p>
     </div>
 
-    <script src="./js/questions.js"></script>
-    <script src="./js/script.js"></script>
+    <div class="score-wrap text-center hide">
+        <h2 id="score-output">Score: 48</h2>
+        <p>Save Your Score</p>
+        <input id="initial-input" type="text" placeholder="Enter Your Initials">
+        <button id="save-score">Save</button>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
-/* Resets */
+/* Resets - reseting default browser styles*/
 * {
   font-family: sans-serif;
 }
 
-/* Global */
+/* Global CLass - prperties used on multiple elements in html*/
 .hide {
   display: none;
 }
@@ -13,10 +13,28 @@
 }
 
 .row {
-  display: flex;
+  display: Flex;
 }
 
-.justify-content {
+.justify-between {
   justify-content: space-between;
 }
-/* Custom */
+
+/* Custom Style - our own custom styling*/
+
+header h3 {
+  margin: 0;
+}
+
+.answer-alert {
+  border-top: 1px solid rgb(83, 79, 79);
+  padding-top: 15px;
+  font-style: italic;
+  color: #777;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.answer-alert.show {
+  opacity: 1;
+}
