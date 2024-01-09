@@ -1,40 +1,77 @@
-/* Resets - reseting default browser styles*/
-* {
-  font-family: sans-serif;
-}
-
-/* Global CLass - prperties used on multiple elements in html*/
-.hide {
-  display: none;
-}
-
-.text-center {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 .row {
-  display: Flex;
+  display: flex;
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
-/* Custom Style - our own custom styling*/
-
-header h3 {
-  margin: 0;
+.text-center {
+  text-align: center;
 }
 
-.answer-alert {
-  border-top: 1px solid rgb(83, 79, 79);
-  padding-top: 15px;
-  font-style: italic;
-  color: #777;
-  opacity: 1;
-  transition: opacity 1s;
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
-.answer-alert.show {
-  opacity: 1;
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.start-wrap,
+.question-wrap,
+.score-wrap {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-wrap button,
+.score-wrap button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-wrap button:hover,
+.score-wrap button:hover {
+  background-color: #45a049;
+}
+
+.choices button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.choices button:hover {
+  background-color: #2980b9;
+}
+
+.hide {
+  display: none;
 }
